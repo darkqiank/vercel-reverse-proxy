@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+/proxy/:match/:url* https://:match/:url* 301
+/proxy/:match/:url*/ https://:match/:url*/ 301
+/httpproxy/:match/:url* http://:match/:url* 301
+/httpproxy/:match/:url*/ http://:match/:url*/ 301
