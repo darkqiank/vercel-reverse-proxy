@@ -1,5 +1,5 @@
 # Redirects from what the browser requests to what we serve
-/proxy/:match/:url* https://:match/:url* 200
-/proxy/:match/:url*/ https://:match/:url*/ 200
-/httpproxy/:match/:url* http://:match/:url* 200
-/httpproxy/:match/:url*/ http://:match/:url*/ 200
+/proxy/* https://:splat 200
+/proxy/*/ https://:splat/ 200
+/httpproxy/* http://:splat 200
+/httpproxy/*/ http://:splat/ 200
